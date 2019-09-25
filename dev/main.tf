@@ -1,5 +1,16 @@
+terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "berchevorg"
+
+    workspaces {
+      name = "monorepo-dev"
+    }
+  }
+}
+
 resource "random_pet" "name" {
-  length    = "23"
+  length    = "21"
   separator = "-"
 }
 
