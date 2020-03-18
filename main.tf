@@ -1,7 +1,7 @@
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "berchevorg"
+    organization = "georgiman"
 
     workspaces {
       prefix = "monorepo-"
